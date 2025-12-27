@@ -1,0 +1,3 @@
+[submodule "linky"]
+	path = linky
+	url = https://github.com/sileht/linky
