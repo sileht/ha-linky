@@ -15,6 +15,7 @@ RUN npm ci --ignore-scripts
 
 # Copy add-on code
 COPY . .
+RUN cd linky && npm ci --ignore-scripts && npm run build
 
 # Transpile TypeScript
 RUN npm run build

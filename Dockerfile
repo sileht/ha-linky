@@ -16,6 +16,7 @@ RUN npm ci --ignore-scripts
 
 # Copy add-on code
 COPY . .
+RUN cd linky && npm ci --ignore-scripts && npm run build
 RUN chmod a+x ./run.sh
 
 # Transpile TypeScript
